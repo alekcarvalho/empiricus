@@ -23,7 +23,10 @@
       </section>
 
       <section>
-        <a-row :gutter="32">
+        <a-row
+          :gutter="32"
+          class="row-flex"
+        >
           <a-col
             v-for="(item,index) in list"
             :key="index"

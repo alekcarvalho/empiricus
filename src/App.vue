@@ -8,7 +8,7 @@
         <router-view />
       </a-layout-content>
       <a-layout-footer class="layout-footer">
-        Footer
+        <Footer />
       </a-layout-footer>
     </a-layout>
   </div>
@@ -16,12 +16,14 @@
 
 <script>
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 export default {
   name: 'App',
 
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

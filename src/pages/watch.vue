@@ -55,6 +55,9 @@
             </a-card>
           </a-col>
           <a-col :lg="{ span: 5}">
+            <h2 class="title">
+              Vídeos relacionados
+            </h2>
             <div
               v-for="(item,index) in list.slice(0, itemsToShow)"
               :key="index"
@@ -174,6 +177,10 @@ export default {
 .description {
   white-space: pre-line;
   color: $secondary;
+}
+
+h2 {
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {

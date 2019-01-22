@@ -14,7 +14,9 @@
           v-for="(item, index) in mainMenu"
           :key="index"
         >
-          {{ item.text }}
+          <router-link :to="item.link">
+            {{ item.text }}
+          </router-link>
         </a-menu-item>
       </a-menu>
     </div>
@@ -97,16 +99,20 @@ export default {
     return {
       mainMenu: [
         {
-          text: 'Quem Somos'
+          text: 'Quem Somos',
+          link: '/'
         },
         {
-          text: 'Conteúdo'
+          text: 'Conteúdo',
+          link: '/'
         },
         {
-          text: 'Assinaturas'
+          text: 'Assinaturas',
+          link: '/'
         },
         {
-          text: 'Atendimento'
+          text: 'Atendimento',
+          link: '/'
         }
       ],
       secMenu: [
@@ -132,12 +138,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 header {
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
   background: $background;
   width: 100%;
-  height: 81px;
+  position: fixed;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
