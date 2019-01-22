@@ -117,7 +117,7 @@ export default {
         }
       },
       list: [],
-      itemsToShow: 3
+      itemsToShow: 5
     }
   },
 
